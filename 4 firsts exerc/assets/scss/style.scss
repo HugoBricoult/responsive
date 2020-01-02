@@ -1,0 +1,64 @@
+@import 'responsive';
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div {
+    display: block;
+}
+
+@include phone {
+    body {
+        background-color: red;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .small {
+        width: 100%;
+    }
+    .medium {
+        width: 100%;
+    }
+    .large {
+        width: 100%;
+    }
+}
+
+@include tablet {
+    body {
+        background-color: green;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .small {
+        width: (200/3)*1%;
+    }
+    .medium {
+        width: (100/3)*1%;
+    }
+    .large {
+        width: 100%;
+    }
+}
+
+@include desktop {
+    body {
+        background-color: blue;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    .small {
+        width: (100/3)*1%;
+    }
+    .medium {
+        width: (100/3)*1%;
+    }
+    .large {
+        width: (100/3)*1%;
+    }
+}
