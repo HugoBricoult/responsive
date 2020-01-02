@@ -44,8 +44,9 @@ nav a {
 header {
     background: url('images/separateur.png') repeat-x bottom;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #titre_principal {
@@ -154,7 +155,7 @@ nav a:hover {
 
 section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     margin-bottom: 20px;
 }
 
@@ -211,7 +212,7 @@ aside img {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
     padding-top: 25px;
@@ -260,35 +261,7 @@ footer h1 {
     color: #760001;
 }
 
-@media only screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    section {
-        flex-direction: column-reverse;
-    }
-    footer {
-        flex-direction: column;
-    }
-}
-
 @media only screen and (min-width: 768px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    section {
-        flex-direction: row;
-    }
-    footer {
-        flex-direction: row;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
     header {
         flex-direction: row;
         justify-content: space-between;
