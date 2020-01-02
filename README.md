@@ -15,5 +15,7 @@ Quand l'écran rétrécit en dessous de 768px :
 * La partie "A propos de l'auteur se retrouve au dessus du text"
 * Les éléments du footer s'alligne verticalement
 
+/!\ Le passage au w3c n'as pas été effectué car on demande de ne pas modifier le html
+
 
 
